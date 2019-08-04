@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <script src='js/dom.js'></script>
+</head>
+<body>
+    <!--事件的注册是直接写在htlm标志中的-->
+    <span id="span1" style="cursor: pointer;" onclick="createElement_DIV()">生成</span>
+    <span id="span2" style="cursor: pointer;" onclick="hide_DIV()">隐藏</span>
+    <br>
+    <!--用超链接调用js方法,必须以JavaScript:为开头-->
+    <a href="javascript:createElement_DIV()" onclick="alert('要显示了呢')">生成</a>
+    <a href="javascript:hide_DIV()" onclick="alert('要隐藏了呢')">隐藏</a>
+    <br>
+    <!--在html页面中没有事件注册-->
+    <span id="span3" style="cursor: pointer;" >生成</span>
+    <span id="span4" style="cursor: pointer;" >隐藏</span>
+    <br>
+    <span id="span7">我的内容</span>
+    <br>
+    <ul id="ulid" name="ulname"><!--不是所有的标签都有name属性,此标签就没有name属性,但是js里却可以查到-->
+        <li>aaa</li>
+        <li>bbb</li>
+        <li>ccc</li>
+        <li>ddd</li>
+        <li>eee</li>
+        <li>fff</li>
+        <li>ggg</li>
+    </ul>
+    <br>
+    <span id="span8">testGetElementById1,获取li中的内容</span>
+    <br>
+    <span id="span9">testGetElementsByName1</span>
+    <br>
+    <form action="" method="post" name="test_form">
+        <input type="text" name="txt" value="aaa"/>
+        <input type="text" name="txt" value="bbb"/>
+        <input type="text" name="txt" value="ccc"/>
+        <input type="submit"  value="提交"/>
+        <input type="reset"  value="重置"/>
+    </form>
+    <br>
+    <span id="span10">testGetElementsByName2</span>
+    <br>
+    <span id="span11">testGetElementsByTagName</span>
+    <br>
+    <span id="span12">testGetDocument</span>
+    <br>
+    <a id="aid" href="http://www.csdn.net">程序员的大本营</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span id="span13">点了就把超链接改动了</span>
+    <br>
+    <span id="span14">点了就删了</span>
+</body>
+</html>
